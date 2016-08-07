@@ -29,13 +29,30 @@
             <input id="search-field" type="text" name="search" placeholder="Что ищем?">
           </form>
         </div>
+        <div class="login">
+          <button type="button">Вход</button>
+          <form action="/login.html">
+            <label for="email-field">Электронная почта</label>
+            <input id="email-field" type="text" name="email" placeholder="Электронная почта">
+            <label for="password-field">Пароль</label>
+            <input id="password-field" type="password" name="password" placeholder="Пароль">
+            <input type="submit" value="Войти">
+            <div class="login-help">
+              <a href="/new-password.html">Забыли пароль?</a>
+              <a href="/sign-up.html">Новая регистрация</a>
+            </div>
+          </form>
+        </div>
+        <div class="cart">
+          <button type="button">Пусто</button>
+          <div class="cart-items"></div>
+        </div>
         <div class="telephone">
           С 10 до 20, ежедневно
           <br>
           <a href="tel:+78124502525">8 812 450-25-25</a>
         </div>
       </nav>
-      .
     </header>
   </body>
 </html>
