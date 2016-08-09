@@ -73,38 +73,42 @@
         <a href="tel:+78124502525">8 812 450-25-25</a>
       </div>
     </header>
-    <ul class="breadcrumbs">
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/catalog.html">Каталог</a></li>
-      <li>Сливочное</li>
-    </ul>
     <main>
+      <ul class="breadcrumbs">
+        <li><a href="/index.html">Главная</a></li>
+        <li><a href="/catalog.html">Каталог</a></li>
+        <li>Сливочное</li>
+      </ul>
       <h1>Сливочное мороженое</h1>
       <form class="filter" action="/filter.html">
-        <label for="sorting-field">Сортировка:</label>
-        <select id="sorting-field" name="sorting">
-          <option value="popular">по популярности</option>
-          <option value="inexpensive">сначала недорогие</option>
-          <option value="expensive">сначала дорогие</option>
-          <option value="fatness">по жирности</option>
-        </select>
-
-        <label for="price-field">Цена: <span class="price-min">100 руб.</span> – <span class="price-max">500 руб.</span></label>
-        <input id="price-field" type="range" min="0" max="500" step="5">
-
-        <label>Жирность:</label>
-        <label><input type="radio" name="fatness" value="0">0%</label>
-        <label><input type="radio" name="fatness" value="less10" checked>до 10%</label>
-        <label><input type="radio" name="fatness" value="less30">до 30%</label>
-        <label><input type="radio" name="fatness" value="more30">выше 30%</label>
-
-        <label>Наполнители:</label>
-        <label><input type="checkbox" name="filler-chocolate" checked>шоколадные</label>
-        <label><input type="checkbox" name="filler-sugar" checked>сахарные присыпки</label>
-        <label><input type="checkbox" name="filler-fruits">фрукты</label>
-        <label><input type="checkbox" name="filler-syrups">сиропы</label>
-        <label><input type="checkbox" name="filler-jams">джемы</label>
-
+        <div class="filter-sorting">
+          <label for="sorting-field"><h2>Сортировка:</h2></label>
+          <select id="sorting-field" name="sorting">
+            <option value="popular">по популярности</option>
+            <option value="inexpensive">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fatness">по жирности</option>
+          </select>
+        </div>
+        <div class="filter-price">
+          <label for="price-field"><h2>Цена:</h2> <span class="price-min">100 руб.</span> – <span class="price-max">500 руб.</span></label>
+          <input id="price-field" type="range" min="0" max="500" step="5">
+        </div>
+        <div class="filter-fatness">
+          <h2>Жирность:</h2>
+          <label><input type="radio" name="fatness" value="0">0%</label>
+          <label><input type="radio" name="fatness" value="less10" checked>до 10%</label>
+          <label><input type="radio" name="fatness" value="less30">до 30%</label>
+          <label><input type="radio" name="fatness" value="more30">выше 30%</label>
+        </div>
+        <div class="filter-filler">
+          <h2>Наполнители:</h2>
+          <label><input type="checkbox" name="filler-chocolate" checked>шоколадные</label>
+          <label><input type="checkbox" name="filler-sugar" checked>сахарные присыпки</label>
+          <label><input type="checkbox" name="filler-fruits">фрукты</label>
+          <label><input type="checkbox" name="filler-syrups">сиропы</label>
+          <label><input type="checkbox" name="filler-jams">джемы</label>
+        </div>
         <input type="submit" value="Применить">
       </form>
       <ul class="ice-creams">
@@ -210,7 +214,7 @@
         </ul>
       </div>
       <div class="dev-info">
-        <div class="dev-logo"></div>
+        <img src="http://placehold.it/107x36" alt="Логотип HTML Academy" width="107" height="36">
         <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
       </div>
     </footer>
