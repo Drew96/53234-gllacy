@@ -22,68 +22,68 @@
           <li><a href="/delivery-and-payment.html">Доставка и оплата</a></li>
           <li><a href="/about.html">О Компании</a></li>
         </ul>
-        <div class="search">
-          <button type="button">Поиск</button>
-          <form action="/search.html">
-            <label for="search-field">Поиск</label>
-            <input id="search-field" type="text" name="search" placeholder="Что ищем?">
-          </form>
-        </div>
-        <div class="login">
-          <button type="button">Вход</button>
-          <form action="/login.html">
-            <label for="email-field">Электронная почта</label>
-            <input id="email-field" type="text" name="email" placeholder="Электронная почта">
-            <label for="password-field">Пароль</label>
-            <input id="password-field" type="password" name="password" placeholder="Пароль">
-            <input type="submit" value="Войти">
-            <div class="login-help">
-              <a href="/new-password.html">Забыли пароль?</a>
-              <a href="/sign-up.html">Новая регистрация</a>
-            </div>
-          </form>
-        </div>
-        <div class="cart">
-          <button type="button">Пусто</button>
-          <div class="cart-items"></div>
-        </div>
-        <div class="telephone">
-          С 10 до 20, ежедневно
-          <br>
-          <a href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
       </nav>
+      <div class="search">
+        <button type="button">Поиск</button>
+        <form action="/search.html">
+          <label for="search-field">Поиск</label>
+          <input id="search-field" type="text" name="search" placeholder="Что ищем?">
+        </form>
+      </div>
+      <div class="login">
+        <button type="button">Вход</button>
+        <form action="/login.html">
+          <label for="email-field">Электронная почта</label>
+          <input id="email-field" type="text" name="email" placeholder="Электронная почта">
+          <label for="password-field">Пароль</label>
+          <input id="password-field" type="password" name="password" placeholder="Пароль">
+          <input type="submit" value="Войти">
+          <div class="login-help">
+            <a href="/new-password.html">Забыли пароль?</a>
+            <a href="/sign-up.html">Новая регистрация</a>
+          </div>
+        </form>
+      </div>
+      <div class="cart">
+        <button type="button">Пусто</button>
+        <div class="cart-items"></div>
+      </div>
+      <div class="telephone">
+        С 10 до 20, ежедневно
+        <br>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
     </header>
     <main>
       <div class="slider">
         <div class="slide slide1">
           <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <a href="/first-set.html">Давайте оба!</a>
+          <a class="btn" href="/first-set.html">Давайте оба!</a>
         </div>
         <div class="slide slide2">
           <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <a href="/second-set.html">Давайте оба!</a>
+          <a class="btn" href="/second-set.html">Давайте оба!</a>
         </div>
         <div class="slide slide3">
           <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <a href="/third-set.html">Давайте оба!</a>
+          <a class="btn" href="/third-set.html">Давайте оба!</a>
         </div>
         <div class="slider-nav">
-          <a href="#slide1"></a>
-          <a href="#slide2"></a>
-          <a href="#slide3"></a>
+          <a href="#slide1">1</a>
+          <a href="#slide2">2</a>
+          <a href="#slide3">3</a>
         </div>
       </div>
       <section class="tiles promo">
         <div class="tiles-left">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="/jam.html">Хочу варенье!</a>
+          <a class="btn" href="/jam.html">Хочу варенье!</a>
         </div>
         <div class="tiles-right">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
-          <a href="/chocolate.html">Хочу шоколадки!</a>
+          <a class="btn" href="/chocolate.html">Хочу шоколадки!</a>
         </div>
       </section>
       <div class="hits">
@@ -141,7 +141,7 @@
           <form action="/delivery.html">
             <label for="email-delivery-field">Электронная почта</label>
             <input id="email-delivery-field" type="text" placeholder="Электронная почта">
-            <input type="submit" value="Отправить">
+            <input class="btn" type="submit" value="Отправить">
           </form>
         </div>
       </section>
@@ -150,7 +150,7 @@
         <div class="contacts">
           <p class="adress">Адрес главного офиса и офлайн магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
           <p class="phone">Для заказов по телефону: <a href="tel:+78124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
-          <button type="button">Форма обратной связи</button>
+          <button class="btn" type="button">Форма обратной связи</button>
           <form class="feedback-form" action="/feedback.html">
             <div>Мы обязательно вам ответим!</div>
             <label for="name-field">Ваше имя</label>
@@ -159,7 +159,7 @@
             <input id="email-feedback-field" type="text" placeholder="Ваша почта для ответа?">
             <label for="feedback-field">Ваш отзыв</label>
             <textarea id="feedback-field" cols="10" rows="5">Напишите что-нибудь...</textarea>
-            <input type="submit" value="Отправить">
+            <input class="btn" type="submit" value="Отправить">
           </form>
         </div>
       </div>
