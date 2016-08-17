@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="logo" src="http://placehold.it/153x63" alt="Логотип Gllacy Shop" width="153" height="63">
+      <img class="logo" src="img/logo.svg" alt="Логотип Gllacy Shop" width="153" height="63">
       <nav class="main-navigation">
         <ul>
           <li>
@@ -24,14 +24,24 @@
         </ul>
       </nav>
       <div class="search">
-        <button type="button">Поиск</button>
+        <button type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16.687" height="16.688" viewBox="0 0 16.687 16.688">
+            <path d="M638.155,40.747H637.4l-0.264-.261a6.21,6.21,0,1,0-.675.675l0.263,0.262v0.755l4.773,4.76,1.423-1.422Zm-5.731,0a4.291,4.291,0,1,1,4.3-4.291A4.294,4.294,0,0,1,632.424,40.747Z" transform="translate(-626.219 -30.25)"/>
+          </svg>
+          Поиск
+        </button>
         <form action="/search.html">
           <label for="search-field">Поиск</label>
           <input id="search-field" type="text" name="search" placeholder="Что ищем?">
         </form>
       </div>
       <div class="login">
-        <button type="button">Вход</button>
+        <button type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+             <path d="M680,32.969v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H683a3,3,0,0,1-3-3V44h2v2h13V31H682v1.969h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H677v5.114Z" transform="translate(-677 -29)"/>
+          </svg>
+          Вход
+        </button>
         <form action="/login.html">
           <label for="email-field">Электронная почта</label>
           <input id="email-field" type="text" name="email" placeholder="Электронная почта">
@@ -45,7 +55,13 @@
         </form>
       </div>
       <div class="cart">
-        <button type="button">Пусто</button>
+        <button type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20.625" height="19.719" viewBox="0 0 20.625 19.719">
+          <path id="cart-fill" d="M783.5,32.375h15.125l-1.375,10.25L784.625,42.5Z" transform="translate(-778.9 -29)"/>
+          <path id="cart-shape" d="M799.576,33.46l-1.2,8.912a2.033,2.033,0,0,1-1.882,1.635H785.61a2.028,2.028,0,0,1-1.879-1.635l-1.469-10.287a3.668,3.668,0,0,1-.137-1.055H780a1,1,0,0,1,0-2h4a1,1,0,0,1,1,1,0.99,0.99,0,0,1-.9.979h13.965C799.172,31.01,799.84,32.141,799.576,33.46Zm-13.845,8.518-1.313-9h13.206s-0.031.2-.031,0.2l-1.186,8.788c-0.008.011-.009,0.014,0,0.014H785.731Zm0.515,3.009a1.874,1.874,0,1,1-1.875,1.874A1.874,1.874,0,0,1,786.246,44.987Zm9,0a1.874,1.874,0,1,1-1.875,1.874A1.874,1.874,0,0,1,795.246,44.987Z" transform="translate(-779 -29.031)"/>
+        </svg>
+        Пусто
+        </button>
         <div class="cart-items"></div>
       </div>
       <div class="telephone">
@@ -89,22 +105,22 @@
       <div class="hits">
         <ul>
           <li>
-            <img class="hit-image" src="http://placehold.it/199x199" alt="Сливочное с апельсиновым джемом и стружкой" width="199" height="199">
+            <img class="hit-image" src="img/ic/ic1.png" alt="Сливочное с апельсиновым джемом и стружкой" width="199" height="199">
             <div class="hit-price">310&#8381;<span>/кг</span></div>
             <a href="/ice-creams/1.html" class="hit-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
           <li>
-            <img class="hit-image" src="http://placehold.it/199x199" alt="Сливочно-кофейное с шоколадом" width="199" height="199">
+            <img class="hit-image" src="img/ic/ic2.png" alt="Сливочно-кофейное с шоколадом" width="199" height="199">
             <div class="hit-price">380&#8381;<span>/кг</span></div>
             <a href="/ice-creams/2.html" class="hit-title">Сливочно-кофейное с кусочками шоколада</a>
           </li>
           <li>
-            <img class="hit-image" src="http://placehold.it/199x199" alt="Сливочно-клубничное с белым шоколадом" width="199" height="199">
+            <img class="hit-image" src="img/ic/ic3.png" alt="Сливочно-клубничное с белым шоколадом" width="199" height="199">
             <div class="hit-price">355&#8381;<span>/кг</span></div>
             <a href="/ice-creams/3.html" class="hit-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
           <li>
-            <img class="hit-image" src="http://placehold.it/199x199" alt="Крем-брюле с карамелью" width="199" height="199">
+            <img class="hit-image" src="img/ic/ic4.png" alt="Крем-брюле с карамелью" width="199" height="199">
             <div class="hit-price">415&#8381;<span>/кг</span></div>
             <a href="/ice-creams/4.html" class="hit-title">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
@@ -177,7 +193,7 @@
         </ul>
       </div>
       <div class="dev-info">
-        <img src="http://placehold.it/107x36" alt="Логотип HTML Academy" width="107" height="36">
+        <img src="img/academy-logo.svg" alt="Логотип HTML Academy" width="107" height="36">
         <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
       </div>
     </footer>
