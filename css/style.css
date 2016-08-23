@@ -116,26 +116,31 @@ h2 {
 }
 
 .hits {
-  font-size: 0;
   margin-bottom: 40px;
 }
 
 .hits ul {
+  font-size: 0;
   margin: 0;
   padding: 0;
 }
 
 .hits li {
   list-style: none;
-  width: 23.25%;
+  width: 22.25%;
   display: inline-block;
   font-size: 16px;
-  margin-right: 2.19%;
+  margin-right: 3.19%;
   vertical-align: top;
 }
 
 .hits li:nth-child(4n) {
   margin-right: 0;
+}
+
+.hits img {
+  width: 100%;
+  height: auto;
 }
 
 .about {
@@ -207,3 +212,75 @@ font-size: 13px;
   float: right;
   width: 22.2%;
 }
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.inner-page h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.inner-page h2 {
+  font-size: 14px;
+}
+
+.filter {
+  font-size: 0;
+  margin-bottom: 34px;
+}
+
+.filter div, .filter input[type="submit"] {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.filter div {
+  margin-right: 15px;
+}
+
+.ice-creams {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.ice-creams li {
+  list-style: none;
+  width: 22.25%;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 3.19%;
+  margin-bottom: 40px;
+  vertical-align: top;
+}
+
+.ice-creams li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.ice-creams img {
+  width: 100%;
+  height: auto;
+}
+.ice-creams .btn {
+  display: none;
+}
+
+.paginator {
+  float: right;
+  margin-bottom: 30px;
+}
+
