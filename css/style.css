@@ -1,13 +1,18 @@
 body {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+
   font-size: 16px;
   line-height: 22px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #323232;
+  color: #fff;
+  background: #849d8f;
 }
 
-/*Заголовок на странице ice-creams.html*/
-h1 {
+
+.inner-page h1 {
   font-size: 35px;
   line-height: 41px;
   font-family: "Roboto", sans-serif;
@@ -15,10 +20,267 @@ h1 {
   color: #fff;
 }
 
-.slider h2 {
+h2 {
   font-size: 60px;
   line-height: 60.35px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #fff;
 }
+
+/*Временно скрываем невидимые элементы*/
+.catalog-nav, .search form, .login form, .cart-items, .slide2, .slide3, .feedback-form {
+  display: none !important;
+}
+
+.main-header, main, .main-footer {
+  padding-left: 2.2%;
+  padding-right: 2.2%;
+}
+
+.map {
+  padding: 0;
+}
+
+.main-navigation ul{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  max-width: 420px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.header-content-right {
+  font-size: 0;
+  max-width: 275px;
+}
+
+.header-content-right div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.logo, .main-navigation {
+  float: left;
+}
+
+.header-content-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.telephone {
+  float: right;
+  clear: both;
+}
+
+.slider {
+  min-height: 574px;
+  margin-bottom: 40px;
+}
+
+.slider h2 {
+  margin: 0;
+  padding-top: 260px;
+}
+
+.promo h2 {
+  font-size: 35px;
+  margin: 0;
+}
+
+.tiles {
+  margin-bottom: 40px;
+}
+
+.tiles-left {
+  float: left;
+  width: 46.6%;
+}
+
+.tiles-right {
+  float: right;
+  width: 46.6%;
+}
+
+.hits {
+  margin-bottom: 40px;
+}
+
+.hits ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.hits li {
+  list-style: none;
+  width: 22.25%;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 3.19%;
+  vertical-align: top;
+}
+
+.hits li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.hits img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.map {
+  min-height: 429px;
+}
+
+.map .contacts {
+  float: right;
+  width: 302px;
+  margin-top: 62px;
+  margin-right: 2.2%;
+}
+
+.socials ul, .info-left-col, .info-right-col{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.socials li {
+  display: inline-block;
+  vertical-align: top;
+
+  /*Временно, чтобы видеть место под иконки*/
+  width: 37px;
+  height: 37px;
+  background: rgba(255,255,255,0.3);
+  margin-right: 10px;
+}
+
+.socals li:last-child {
+  margin-left: 0;
+}
+
+.info li {
+font-size: 13px;
+}
+
+.socials {
+  float: left;
+  width: 22.2%;
+}
+
+.info {
+  float: left;
+  width: 46.6%;
+  margin: 0 4.5%;
+  text-align: center;
+  font-size: 0;
+}
+
+.info-left-col, .info-right-col {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 13px;
+  text-align: left;
+}
+
+.info-left-col {
+  margin-right: 30px;
+}
+
+.dev-info {
+  float: right;
+  width: 22.2%;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.inner-page h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.inner-page h2 {
+  font-size: 14px;
+}
+
+.filter {
+  font-size: 0;
+  margin-bottom: 34px;
+}
+
+.filter div, .filter input[type="submit"] {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.filter div {
+  margin-right: 15px;
+}
+
+.ice-creams {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.ice-creams li {
+  list-style: none;
+  width: 22.25%;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 3.19%;
+  margin-bottom: 40px;
+  vertical-align: top;
+}
+
+.ice-creams li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.ice-creams img {
+  width: 100%;
+  height: auto;
+}
+.ice-creams .btn {
+  display: none;
+}
+
+.paginator {
+  float: right;
+  margin-bottom: 30px;
+}
+
