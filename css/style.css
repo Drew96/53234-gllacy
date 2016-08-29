@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/roboto.woff2') format('woff2'),
+       url('../fonts/roboto.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url('../fonts/robotobold.woff2') format('woff2'),
+       url('../fonts/robotobold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url('../fonts/robotomedium.woff2') format('woff2'),
+       url('../fonts/robotomedium.woff') format('woff');
+  font-weight: medium;
+}
+
 body {
   min-width: 900px;
   max-width: 1200px;
@@ -5,7 +26,7 @@ body {
 
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto", sans-serif;
+  /*font-family: "RobotoRegular", sans-serif;*/
   font-weight: 400;
   color: #fff;
   background: #849d8f;
@@ -15,21 +36,21 @@ body {
 .inner-page h1 {
   font-size: 35px;
   line-height: 41px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial" sans-serif;
   font-weight: bold;
   color: #fff;
 }
 
 h2 {
   font-size: 60px;
-  line-height: 60.35px;
+  line-height: 60px;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   color: #fff;
+  text-align: center;
 }
 
 /*Временно скрываем невидимые элементы*/
-.catalog-nav, .search form, .login form, .cart-items, .slide2, .slide3, .feedback-form {
+ .search form, .login form, .cart-items, .slide2, .slide3, .feedback-form {
   display: none !important;
 }
 
@@ -42,19 +63,8 @@ h2 {
   padding: 0;
 }
 
-.main-navigation ul{
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  list-style: none;
-  max-width: 420px;
-}
 
-.main-navigation li {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
-}
+
 
 .header-content-right {
   font-size: 0;
@@ -69,6 +79,10 @@ h2 {
 
 .logo, .main-navigation {
   float: left;
+}
+
+.logo {
+  margin-top: 9px;
 }
 
 .header-content-right {
@@ -284,3 +298,108 @@ font-size: 13px;
   margin-bottom: 30px;
 }
 
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation > ul{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  max-width: 420px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: "Roboto Bold", "Arial", sans-serif;
+}
+
+.main-navigation  li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-navigation  button {
+
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 7px 13px;
+  margin: 0 0.5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.main-navigation  a {
+  display: block;
+  color: #fff;
+  padding: 7px 13px;
+  margin: 0 0.5px;
+  border-radius: 20px;
+}
+
+.main-navigation  a:hover, .main-navigation  button:hover {
+  background: #f7f6f3;
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-navigation   a:active, .main-navigation  button:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 3px 3px 0px rgba(105,105,105,1);
+}
+
+/*Стиль для IE. Убираем эффект нажатия на кнопку.*/
+.main-navigation  button:active span, .main-navigation  button:focus span {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.catalog-nav {
+  margin: 0;
+  padding: 6px;
+  position: absolute;
+  background-color: #f8f7f4;
+  color: #323232;
+  display: block;
+  min-width: 138px;
+  border-radius: 6px;
+}
+
+.catalog-nav li {
+  display: block;
+  font-size: 14px;
+}
+
+.catalog-nav li:not(:first-child){
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.catalog-nav li:first-child {
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.catalog-nav a {
+  background-color: #f8f7f4;
+  color: #323232;
+  text-decoration: none;
+  border-radius: 0;
+  padding: 6px 0 6px 20px;
+  margin-right: 0;
+}
+
+.catalog-nav a:hover {
+  background-color: #fbded7;
+  color: inherit;
+}
+
+.catalog-nav a:active {
+  box-shadow: none;
+  background-color: #f6b5a5;
+}
